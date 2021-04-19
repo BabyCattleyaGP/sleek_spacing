@@ -6,11 +6,11 @@ import 'insets.dart';
 import 'space.dart';
 
 class SleekPadding extends StatelessWidget {
-  final SleekInsets padding;
-  final Widget child;
+  final SleekInsets? padding;
+  final Widget? child;
 
   const SleekPadding({
-    Key key,
+    Key? key,
     this.child,
     this.padding = SleekInsets.none,
   })  : assert(padding != null),
@@ -18,7 +18,7 @@ class SleekPadding extends StatelessWidget {
 
   factory SleekPadding.only(
     SleekSpace space, {
-    Key key,
+    Key? key,
     SleekSides sides = SleekSides.all,
   }) =>
       SleekPadding(
@@ -27,7 +27,7 @@ class SleekPadding extends StatelessWidget {
       );
 
   factory SleekPadding.extraSmall({
-    Key key,
+    Key? key,
     SleekSides sides = SleekSides.all,
   }) =>
       SleekPadding(
@@ -36,7 +36,7 @@ class SleekPadding extends StatelessWidget {
       );
 
   factory SleekPadding.small({
-    Key key,
+    Key? key,
     SleekSides sides = SleekSides.all,
   }) =>
       SleekPadding(
@@ -45,7 +45,7 @@ class SleekPadding extends StatelessWidget {
       );
 
   factory SleekPadding.medium({
-    Key key,
+    Key? key,
     SleekSides sides = SleekSides.all,
   }) =>
       SleekPadding(
@@ -54,7 +54,7 @@ class SleekPadding extends StatelessWidget {
       );
 
   factory SleekPadding.normal({
-    Key key,
+    Key? key,
     SleekSides sides = SleekSides.all,
   }) =>
       SleekPadding(
@@ -63,7 +63,7 @@ class SleekPadding extends StatelessWidget {
       );
 
   factory SleekPadding.big({
-    Key key,
+    Key? key,
     SleekSides sides = SleekSides.all,
   }) =>
       SleekPadding(
@@ -72,7 +72,7 @@ class SleekPadding extends StatelessWidget {
       );
 
   factory SleekPadding.extraBig({
-    Key key,
+    Key? key,
     SleekSides sides = SleekSides.all,
   }) =>
       SleekPadding(
@@ -83,7 +83,7 @@ class SleekPadding extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: padding.toEdgeInsets(context: context),
+      padding: padding!.toEdgeInsets(context: context),
       child: child,
     );
   }

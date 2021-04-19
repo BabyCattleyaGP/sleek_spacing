@@ -13,12 +13,12 @@ class _$SleekSpacingDataTearOff {
   const _$SleekSpacingDataTearOff();
 
   _SleekSpacingData _(
-      {@required double extraSmall,
-      @required double small,
-      @required double normal,
-      @required double medium,
-      @required double big,
-      @required double extraBig}) {
+      {required double extraSmall,
+      required double small,
+      required double normal,
+      required double medium,
+      required double big,
+      required double extraBig}) {
     return _SleekSpacingData(
       extraSmall: extraSmall,
       small: small,
@@ -136,12 +136,12 @@ class _$_SleekSpacingData
     with DiagnosticableTreeMixin
     implements _SleekSpacingData {
   const _$_SleekSpacingData(
-      {@required this.extraSmall,
-      @required this.small,
-      @required this.normal,
-      @required this.medium,
-      @required this.big,
-      @required this.extraBig})
+      {required this.extraSmall,
+      required this.small,
+      required this.normal,
+      required this.medium,
+      required this.big,
+      required this.extraBig})
       : assert(extraSmall != null),
         assert(small != null),
         assert(normal != null),
@@ -217,12 +217,12 @@ class _$_SleekSpacingData
 
 abstract class _SleekSpacingData implements SleekSpacingData {
   const factory _SleekSpacingData(
-      {@required double extraSmall,
-      @required double small,
-      @required double normal,
-      @required double medium,
-      @required double big,
-      @required double extraBig}) = _$_SleekSpacingData;
+      {required double extraSmall,
+      required double small,
+      required double normal,
+      required double medium,
+      required double big,
+      required double extraBig}) = _$_SleekSpacingData;
 
   @override
   double get extraSmall;
